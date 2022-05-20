@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    width: 53%;
+    margin: auto;
+    margin-top: 180px;
+    margin-bottom: 250px;
+    justify-content: space-between;
+        &__info {
+            &__text {
+                color: $color-text-third;
+                font-size: 18px
+            }
+            &__h2 {
+                color: $color-text-first;
+                font-size: 40px;
+                margin-top: 0;
+                margin-bottom: 40px;
+                    &--dot {
+                        color: $color-text-third;
+                    }
+            }
+            &__description {
+                color: $color-text-secondary;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+}

@@ -1,0 +1,63 @@
+.contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 50px;
+        &__one {
+            border: #F0F3FF 3px solid;
+            border-radius: 5px;
+            width: 46.5%;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            transition: all .2s linear;
+                &__info {
+                    display: flex;
+                    margin-left: 25px;
+                    margin-top: 25px;
+                        &__icon {
+                            color: $blue;
+                            padding: 8px;
+                            background-color: #F0F3FF;
+                            border-radius: 5px;
+                        }
+                        &__text {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 15px;
+                                &__title {
+                                    color: $color-text-first;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin: 0;
+                                    margin-top: 2px;
+                                }
+                                &__number {
+                                    color: $color-text-secondary;
+                                    font-size: 14px;
+                                    margin-top: 5px;
+                                }
+                        }
+                }
+                &:hover {
+                    box-shadow: 1px 1px 14px 4px #F0F3FF;
+                }
+                &__button {
+                    color: $blue;
+                    background-color: #F0F3FF;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 20px 50px;
+                    margin: 10px 0 25px 25px;
+                    transition: all .25s linear;
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background-color: $blue;
+                        }
+                        &--adapt {
+                        padding: 20px 30px; 
+                        }
+                }
+        }
+}

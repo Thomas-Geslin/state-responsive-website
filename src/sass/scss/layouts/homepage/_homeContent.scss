@@ -1,0 +1,67 @@
+.homepage {
+    background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%);
+}
+
+.homecontent {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 53%;
+    margin: auto;
+    padding-top: 200px;
+        &__info {
+            &__title {
+                font-size: 70px;
+                letter-spacing: 2px;
+            }
+            &__text {
+                font-size: 18px;
+                color: $color-text-secondary;
+                line-height: 24px;
+                margin-bottom: 50px;
+            }
+            &__description {
+                display: flex;
+                justify-content: space-between;
+                width: 82%;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                    &__title {
+                       font-size: 36px;
+                       margin-bottom: 0;
+                            &--plus {
+                                color: $color-text-third;
+                                margin-left: 15px;
+                            }
+                    }
+                    &__text {
+                        color: $color-text-secondary;
+                        font-size: 15px;
+                        line-height: 22px;
+                        margin-top: 10px;
+                    }
+            }
+        }
+        &__image {
+            position: relative;
+                &__img {
+                    width: 472px;
+                    height: 660px;
+                    position: relative;
+                    bottom: -115px;
+                    border-radius: 300px 300px 15px 15px;
+                    box-shadow: 0 16px 32px hsl(228deg 66% 25% / 25%);
+                    z-index: 2;
+                }
+                &__border {
+                    width: 505px;
+                    height: 645px;
+                    position: absolute;
+                    top: 96px;
+                    left: -17px;
+                    background: linear-gradient(180deg, hsl(0, 0%, 16%) 93%, hsl(0, 0%, 67%) 100%);
+                    border-radius: 300px 300px 0 0;
+                    z-index: 1;
+                }
+        }
+}

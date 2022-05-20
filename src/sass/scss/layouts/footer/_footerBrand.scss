@@ -1,0 +1,18 @@
+.footer__brand {
+    &__title {
+        display: flex;
+        align-items: center;
+            &__name {
+                font-size: 18px;
+                color: $blue;
+                font-weight: bold;
+                margin-right: 3px;
+            }
+    }
+    &__text {
+        color: #6C7493;
+        font-weight: bold;
+        line-height: 24px;
+        margin-top: 0;
+    }
+}

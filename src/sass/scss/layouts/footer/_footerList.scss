@@ -1,0 +1,24 @@
+.footer {
+    width: 53%;
+    margin: auto;
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__list {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+                &__title {
+                    color: $color-text-first;
+                    font-size: 22px;
+                    margin-bottom: 40px;
+                }
+                & p {
+                    color: #6C7493;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+        }
+}

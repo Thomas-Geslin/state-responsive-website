@@ -1,0 +1,14 @@
+.footer__rights {
+    color: #6C7493;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    margin-top: 50px;
+        &__info {
+            display: flex;
+            width: 24%;
+            justify-content: space-between;
+        }
+}

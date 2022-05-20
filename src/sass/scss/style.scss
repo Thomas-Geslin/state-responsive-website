@@ -1,0 +1,33 @@
+@import "./base/normalize";
+@import "./base/typographie";
+
+
+@import"./utils/variables.scss";
+@import"./utils/keyframes.scss";
+
+
+@import "./layouts/homepage/header";
+@import "./layouts/homepage/homeContent";
+@import "./layouts/homepage/homeInput";
+
+@import "./layouts/icons";
+
+@import "./layouts/popular/popularTitle";
+@import "./layouts/popular/popularCard";
+
+@import "./layouts/value/valueImage";
+@import "./layouts/value/valueText";
+@import "./layouts/value/valueList";
+
+@import "./layouts/contact/contactText";
+@import "./layouts/contact/contactImage";
+@import "./layouts/contact/contactList";
+
+@import "./layouts/started";
+
+@import "./layouts/footer/footerBrand";
+@import "./layouts/footer/footerList";
+@import "./layouts/footer/footerRights";
+
+@import "./layouts/app";
+@import "./layouts/index";
