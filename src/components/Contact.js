@@ -30,16 +30,16 @@ const revealRight = keyframes`
 `;
 
 
-function Contact() {
+function Contact({ darkTheme }) {
     return(<div className="contact">
                 <Reveal keyframes={revealRight} triggerOnce duration={2500}>
                     <div>
-                        <ContactText />
-                        <ContactList />
+                        <ContactText darkTheme={darkTheme} />
+                        <ContactList darkTheme={darkTheme} />
                     </div>
                 </Reveal>
 
-                <Reveal keyframes={revealLeft} triggerOnce duration={2500}><ContactImage /></Reveal>
+                <Reveal keyframes={revealLeft} triggerOnce duration={2500}><ContactImage darkTheme={darkTheme} /></Reveal>
             </div>)
 }
 

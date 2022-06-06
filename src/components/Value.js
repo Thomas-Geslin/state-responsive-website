@@ -17,14 +17,14 @@ const revealLeft = keyframes`
   }
 `;
 
-function Value() {
+function Value({ darkTheme }) {
     return(<div className="value">
-                <ValueImage />
+                <ValueImage darkTheme={darkTheme} />
 
                 <Reveal keyframes={revealLeft} triggerOnce duration={2500}>
                     <div>
-                        <ValueText />
-                        <ValueList />
+                        <ValueText darkTheme={darkTheme} />
+                        <ValueList darkTheme={darkTheme} />
                     </div>
                 </Reveal>
             </div>)

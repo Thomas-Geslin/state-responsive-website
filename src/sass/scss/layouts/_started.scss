@@ -35,3 +35,17 @@
                 }
     }
 }
+
+.darkStarted {
+    text-align: center;
+    border: 10px solid #1e2029;
+    border-radius: 15px;
+    width: 53%;
+    margin: auto;
+    margin-bottom: 180px;
+        &__content {
+            background-color: #1a1c23;
+            padding: 100px;
+            border-radius: 5px;
+        }
+}

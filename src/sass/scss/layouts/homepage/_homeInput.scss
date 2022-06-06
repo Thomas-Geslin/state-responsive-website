@@ -41,3 +41,18 @@
                 }
         }
 }
+
+.darkForm {
+    background-color: #1a1c23; 
+    border: 4px solid #1e2029;
+        &__input {
+            background-color: #1a1c23;
+            color: $color-text-secondary;
+            border: none;
+            outline: none;
+            margin-left: -65px;
+                &::placeholder {
+                    color: $color-text-secondary;
+                }
+        }
+}

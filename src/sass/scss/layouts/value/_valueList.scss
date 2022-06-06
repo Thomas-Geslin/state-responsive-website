@@ -46,3 +46,44 @@
     margin-bottom: 30px;
     line-height: 22px;
 }
+
+.darkValue__list {
+    padding-left: 0;
+        &__one {
+            border: solid 3px #1a1c23;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+                &__div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                        &__icon {
+                            color: $blue;
+                            padding: 7px;
+                            background-color: #1a1c23;
+                            border-radius: 7px;
+                            margin: 20px 0 20px 15px
+                        }
+                        &__text {
+                            color: white;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        &__down {
+                            color: $blue;
+                            padding: 3px 6px;
+                            background-color: #1a1c23;
+                            border-radius: 5px;
+                            margin-right: 15px;
+                        }
+                }
+                &__description {
+                    display: none;
+                }
+        }
+}

@@ -5,8 +5,10 @@
 @import"./utils/variables.scss";
 @import"./utils/keyframes.scss";
 
+@import "./layouts/darkTheme";
 
-@import "./layouts/homepage/header";
+@import "./layouts/header";
+
 @import "./layouts/homepage/homeContent";
 @import "./layouts/homepage/homeInput";
 
@@ -28,6 +30,8 @@
 @import "./layouts/footer/footerBrand";
 @import "./layouts/footer/footerList";
 @import "./layouts/footer/footerRights";
+
+@import "./layouts/scrollTop";
 
 @import "./layouts/app";
 @import "./layouts/index";

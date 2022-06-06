@@ -15,8 +15,9 @@ const revealRight = keyframes`
   }
 `;
 
-function ValueImage() {
-    return(<Reveal keyframes={revealRight} triggerOnce duration={2500}><img src={house} alt="Maison Moderne" className='value__image' /></Reveal>)
+function ValueImage({ darkTheme }) {
+    return darkTheme!=='dark' ? (<Reveal keyframes={revealRight} triggerOnce duration={2500}><img src={house} alt="Maison Moderne" className='value__image' /></Reveal>)
+                              : (<Reveal keyframes={revealRight} triggerOnce duration={2500}><img src={house} alt="Maison Moderne" className='darkValue__image' /></Reveal>)
 }
 
 export default ValueImage

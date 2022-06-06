@@ -9,6 +9,7 @@
     left: 0;
     padding-left: 160px;
     padding-right: 160px;
+    transition: .5s;
         &__brand {
             color: white;
             display: flex;
@@ -69,4 +70,9 @@
         .header__brand {
             color: $blue;
         }
+}
+
+.darkHeader {
+    background-color: #121317;
+    z-index: 1000;
 }

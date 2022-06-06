@@ -1,0 +1,20 @@
+.scroll {
+    font-size: 13px;
+    color:#1f2f70;
+    box-shadow: 0 8px 12px #2745be1a;
+    border-radius: 5px;
+    padding: 12px;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    transition: .3s;
+        &:hover {
+            cursor: pointer;
+            color: $blue;
+            transform: translateY(-5px);
+        }
+}
+
+.scrollAppear {
+    bottom: -100px;
+}

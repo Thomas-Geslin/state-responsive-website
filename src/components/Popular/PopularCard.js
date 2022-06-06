@@ -25,35 +25,36 @@ const reveal = keyframes`
   }
 `;
 
-function PopularCard() {
+function PopularCard({ darkTheme }) {
       return(<Reveal keyframes={reveal} triggerOnce duration={2500}>
-           <Swiper
-                modules={[Navigation]}
-                loop={true}
-                spaceBetween={50}
-                slidesPerView={3}
-                navigation={{
-                  prevEl: '.navigation__previous-ref',
-                  nextEl: '.navigation__next-ref',
-                }}
-            >
-                <div className='card'>
-                    {houseList.map(({id, name, location, price, image}) => (
-                        <SwiperSlide><HouseItem 
-                            id={id}
-                            name={name}
-                            location={location}
-                            price={price}
-                            image={image}
-                        /></SwiperSlide>
-                    ))}
-                </div>
-                <div className='navigation'>
-                  <div className='navigation__previous-ref'><FontAwesomeIcon icon={faAngleLeft} className='navigation__icon' /></div>
-                  <div className='navigation__next-ref'><FontAwesomeIcon icon={faAngleRight} className='navigation__icon' /></div>
-                </div>
-            </Swiper>
-            </Reveal>)
+              <Swiper
+                    modules={[Navigation]}
+                    loop={true}
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    navigation={{
+                      prevEl: '.navigation__previous-ref',
+                      nextEl: '.navigation__next-ref',
+                    }}
+                >
+                    <div className='card'>
+                        {houseList.map(({id, name, location, price, image}) => (
+                            <SwiperSlide><HouseItem 
+                                id={id}
+                                name={name}
+                                location={location}
+                                price={price}
+                                image={image}
+                                darkTheme={darkTheme}
+                            /></SwiperSlide>
+                        ))}
+                    </div>
+                    <div className='navigation'>
+                      <div className='navigation__previous-ref'><FontAwesomeIcon icon={faAngleLeft} className='navigation__icon' /></div>
+                      <div className='navigation__next-ref'><FontAwesomeIcon icon={faAngleRight} className='navigation__icon' /></div>
+                    </div>
+                </Swiper>
+                </Reveal>)
 }
 
 export default PopularCard

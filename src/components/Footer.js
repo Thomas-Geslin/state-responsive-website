@@ -17,12 +17,12 @@ const reveal = keyframes`
   }
 `;
 
-function Footer() {
+function Footer({ darkTheme }) {
     return(<div className="footer">
                 <Reveal keyframes={reveal} cascade damping={0.2} triggerOnce duration={2500}>
                     <div className="footer__content">
                         <FooterBrand />
-                        <FooterList />
+                        <FooterList darkTheme={darkTheme} />
                     </div>
 
                     <FooterRights />

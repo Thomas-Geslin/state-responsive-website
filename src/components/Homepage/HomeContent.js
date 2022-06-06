@@ -28,14 +28,14 @@ const revealDown = keyframes`
   }
 `;
 
-function HomeContent() {
-    return (<div className='homecontent'>
+function HomeContent({ darkTheme }) {
+    return (<div id="home" className='homecontent'>
                 <div className="homecontent__info">
                     <Reveal keyframes={revealUp} cascade damping={0.15} triggerOnce duration={2000}>
                         <h1 className="homecontent__info__title appear">Discover<br/>Most Suitable<br/>Property</h1>
                         <p className="homecontent__info__text appear">Find a variety of properties that suit you very easily, 
                             <br/>forget all difficulties in finding a residence for you</p>
-                        <HomeInput />
+                        <HomeInput darkTheme={darkTheme} />
 
                         <div className="homecontent__info__description appear">
                             <div>

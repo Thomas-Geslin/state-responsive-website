@@ -17,14 +17,21 @@ function clearInput() {
     mark.style.display = 'none';
 }
 
-function HomeInput() {
+function HomeInput({ darkTheme }) {
     /* Input de la première partie de la page */
-    return (<form className="form">
-                <FontAwesomeIcon icon={faLocationDot} className="form__icon" />
-                <input placeholder="Search by location..." onChange={markAppear} className="form__input" id='input'></input>
-                <FontAwesomeIcon icon={faXmark} onClick={clearInput} className="form__mark" id='mark' />
-                <button className="form__button">Search</button>
-            </form>)
+    return darkTheme!=='dark' ? (<form className="form">
+                                    <FontAwesomeIcon icon={faLocationDot} className="form__icon" />
+                                    <input placeholder="Search by location..." onChange={markAppear} className="form__input" id='input'></input>
+                                    <FontAwesomeIcon icon={faXmark} onClick={clearInput} className="form__mark" id='mark' />
+                                    <button className="form__button">Search</button>
+                                </form>)
+
+                              : (<form className="form darkForm">
+                                    <FontAwesomeIcon icon={faLocationDot} className="form__icon" />
+                                    <input placeholder="Search by location..." onChange={markAppear} className="darkForm__input" id='input'></input>
+                                    <FontAwesomeIcon icon={faXmark} onClick={clearInput} className="form__mark" id='mark' />
+                                    <button className="form__button">Search</button>
+                                </form>)
 }
 
 export default HomeInput

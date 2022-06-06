@@ -1,8 +1,12 @@
 import logo from '../../assets/favicon.png'
 
+function reload() {
+    window.location.reload()
+}
+
 function FooterBrand() {
     return(<div className='footer__brand'>
-                <div className='footer__brand__title'>
+                <div className='footer__brand__title' onClick={reload}>
                     <p className='footer__brand__title__name'>Holux</p>
                     <img src={logo} alt="Logo de la marque Holux"  className='footer__brand__title__image' />
                 </div>
